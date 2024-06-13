@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Personal Showcase Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        #portfolio h2 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: calc(33% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .item h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .item p {
+            padding: 0 10px 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .item a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .item {
+                width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="portfolio">
+            <h2>Comic Projects</h2>
+            <div class="gallery">
+                <div class="item">
+                    <a href="https://www.dongmanmanhua.cn/LOVE/langmanteji/10%E8%AF%9D-%E6%9C%AA%E7%9F%A5%E8%8A%B1%E5%BC%80%E5%B7%B2%E6%9C%89%E6%83%85-%E5%AE%85%E7%B1%B3-%E4%BD%9C%E5%AE%B6/viewer?title_no=1031&episode_no=10" target="_blank">
+                        <img src="images/comic1.png" alt="《少女的幻想之浪漫特辑：未知花开已有情》/Girl's Fantasy Romance Special: Unknown Flower Blooms with Love">
+                        <h3>《少女的幻想之浪漫特辑：未知花开已有情》/Girl's Fantasy Romance Special: Unknown Flower Blooms with Love</h3>
+                        <p>This is a short webcomic I participated in at the invitation of WEBTOON, telling the romantic thoughts of a girl.</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.dongmanmanhua.cn/ANCIENTCHINESE/lianshangdafuhei/list?title_no=1217" target="_blank">
+                        <img src="images/comic2.jpg" alt="Comic 2">
+                        <h3>恋上大腹黑/Fall in love with a big Sly</h3>
+                        <p>This comic follows a kind-hearted and unsuspecting protagonist who, after accidentally traveling back in time to ancient China, finds herself serving as a painter in the imperial palace. Unbeknownst to her, she becomes entangled in the power struggles and intrigues among the princes of the royal court.</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="work3.html">
+                        <img src="images/work3-3.jpeg" alt="Work 3">
+                        <h3>《动漫作品赏析：融媒体的视域》/Analysis of Anime Works: A Multimodal Perspective</h3>
+                        <h3>编者：陈骞、陈芷明/Editors: Qian Chen, Zhiming Chen</h3>
+                        <p>Possibly the first book in the nation (or even the world) --
+
+                            A handbook-style textbook written for all future media professionals, drawing universal media experience from the "second dimension" (anime culture)
+                            A strategy guide that starts from the anime media of the current "post-animation" era, offering solutions for the symbiosis of anime content and media technology forms
+                            An engaging textbook that delves into the imaginative power of anime through the relationship between text and images, making complex concepts accessible
+                            Coming soon... in 2025</p>
+                    </a>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+            <h2>Research Projects</h2>
+            <p>[1]陈芷明.  浅谈新媒体环境对条漫创作的影响研究    [J].  门窗,  2017,    (03):  209.  </p>
+            <p>[2]陈芷明.  文化融合下条漫的跨媒体叙事特征    [J].  青年记者,  2020,    (36):  27-28.  DOI:10.15997/j.cnki.qnjz.2020.36.015.</p>
+            <p>[3]陈芷明.  桌面电影《网络谜踪》数字化的镜像建构    [J].  艺术研究,  2021,    (06):  86-88.  DOI:10.13944/j.cnki.ysyj.2021.0374. </p>
+            <p>[4]谢宗贵,陈芷明.  媒介融合下条漫再媒介化的叙事空间与数字出版    [J].  编辑之友,  2021,    (12):  50-57.  DOI:10.13786/j.cnki.cn14-1066/g2.2021.12.008.</p>
+            <p>[5]陈芷明.  浅论国产手游的民族性探索——从《江南百景图》的艺术再现、叙事与生产分析    [J].  东南传播,  2022,    (04):  3-6.  DOI:10.13556/j.cnki.dncb.cn35-1274/j.2022.04.039.</p>
+            <p>[6]YAQOUB M, GAO Z, YE X,  K. Al-Kassimi, Z. Chen and W. Haizhou. Three decades of glocalization research: A bibliometric analysis [J]. Cogent Social Sciences, 2023, 9(2): 2245239.</p>
+            <p>[7]陈芷明.  共同体美学视域下的中国电影跨媒体叙事  [J/OL].    重庆邮电大学学报(社会科学版),    1-12[2024-01-30].    https://kns-cnki-net.vpn3.fjnu.edu.cn/kcms/detail/50.1180.C.20230112.1146.001.html. </p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zhiming Chen</p>
+    </footer>
+</body>
+</html>

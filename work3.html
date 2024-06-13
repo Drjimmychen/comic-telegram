@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work 1 Details</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        #work-details h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 400px; 
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+        }
+
+        .swiper-slide img {
+            max-width: 100%;
+            max-height: 300px; 
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #333 !important;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>《动漫作品赏析：融媒体的视域》 / Analysis of Anime Works: A Multimodal Perspective</h1>
+    <h3>编者：陈骞、陈芷明/Editors: Qian Chen, Zhiming Chen</h3>
+</header>
+
+<main>
+    <section id="work-details">
+        <h3>Possibly the first book in the nation (or even the world) --
+            A handbook-style textbook written for all future media professionals, drawing universal media experience from the "second dimension" (anime culture)
+            A strategy guide that starts from the anime media of the current "post-animation" era, offering solutions for the symbiosis of anime content and media technology forms
+            An engaging textbook that delves into the imaginative power of anime through the relationship between text and images, making complex concepts accessible
+            Coming soon... in 2025
+        </h3>
+        <h3>Please enjoy a preview of some of the content</h3>
+
+        <!-- 使用 Swiper 的容器 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/work3-1.jpeg" alt="Work 1 Slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/work3-2.jpeg" alt="Work 1 Slide 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/work3-3.jpeg" alt="Work 1 Slide 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/work3-4.jpeg" alt="Work 1 Slide 4">
+                </div>
+                <!-- 添加更多滑动项 -->
+            </div>
+            <!-- 分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 导航按钮 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Zhiming Chen</p>
+</footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>
